@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pengalaman Organisasi - Deaga</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --black:#0A0A0A; --dark:#1A1A1A; --card:#141414; --border:rgba(255,255,255,0.08); --mid:#555; --light:#AAA; --white:#F8F8F8; --pure:#FFF; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:var(--black); font-family:'Inter',sans-serif; color:var(--white); min-height:100vh; }
+    body::before { content:''; position:fixed; inset:0; background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px); background-size:60px 60px; pointer-events:none; }
+    .page-header { background:var(--dark); border-bottom:1px solid var(--border); padding:18px 40px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
+    .back-btn { color:var(--light); text-decoration:none; font-size:11px; letter-spacing:3px; text-transform:uppercase; transition:color 0.2s; }
+    .back-btn:hover { color:var(--pure); }
+    .header-title { font-family:'Cormorant Garamond',serif; color:var(--white); font-size:17px; font-weight:300; letter-spacing:2px; }
+    .container { max-width:860px; margin:0 auto; padding:50px 24px; }
+    .page-title { font-family:'Cormorant Garamond',serif; font-size:42px; font-weight:300; color:var(--pure); margin-bottom:6px; animation:fadeUp 0.7s ease forwards; }
+    .page-subtitle { font-size:11px; color:var(--mid); letter-spacing:4px; text-transform:uppercase; margin-bottom:48px; animation:fadeUp 0.7s ease forwards 0.1s; opacity:0; }
+
+    .org-item { background:var(--card); border:1px solid var(--border); margin-bottom:24px; animation:fadeUp 0.7s ease forwards; opacity:0; }
+    .org-item:nth-child(1){animation-delay:0.2s} .org-item:nth-child(2){animation-delay:0.3s} .org-item:nth-child(3){animation-delay:0.4s}
+    .org-header { border-bottom:1px solid var(--border); padding:20px 28px; display:flex; align-items:center; gap:16px; }
+    .org-number { width:32px; height:32px; border:1px solid rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--light); flex-shrink:0; font-weight:300; }
+    .org-header-info h2 { font-family:'Cormorant Garamond',serif; color:var(--pure); font-size:20px; font-weight:400; }
+    .org-header-info p { color:var(--mid); font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-top:3px; }
+    .org-body { padding:24px 28px; }
+    .org-desc { font-size:14px; color:var(--light); line-height:1.7; margin-bottom:20px; font-weight:300; }
+    .photo-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:8px; }
+    .photo-item { aspect-ratio:4/3; background:var(--dark); overflow:hidden; }
+    .photo-item img { width:100%; height:100%; object-fit:cover; filter:grayscale(100%); transition:filter 0.3s ease,transform 0.3s ease; }
+    .photo-item:hover img { filter:grayscale(0%); transform:scale(1.04); }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+  </style>
+</head>
+<body>
+  <div class="page-header">
+    <a href="profil.html" class="back-btn">← Kembali</a>
+    <span class="header-title">Pengalaman Organisasi</span>
+    <span></span>
+  </div>
+  <div class="container">
+    <h1 class="page-title">Pengalaman Organisasi</h1>
+    <p class="page-subtitle">Rekam jejak perjalanan organisasi</p>
+
+    <div class="org-item">
+      <div class="org-header">
+        <div class="org-number">01</div>
+        <div class="org-header-info">
+          <h2>Ketua Dewan Ambalan</h2>
+          <p>Pramuka · SMA</p>
+        </div>
+      </div>
+      <div class="org-body">
+        <p class="org-desc">Memimpin dan mengkoordinasikan seluruh kegiatan Dewan Ambalan Pramuka di jenjang SMA. Bertanggung jawab atas perencanaan program, pembinaan anggota, serta menjaga semangat kepramukaan di lingkungan sekolah.</p>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://drive.google.com/thumbnail?id=12rQgNnb_e8xqcOtAhnqXmSzunqc9eA4y&sz=w400" alt="Ketua Dewan Ambalan 1"/></div>
+          <div class="photo-item"><img src="https://drive.google.com/thumbnail?id=1nxyY17OiX_exObPnxdtQJGiOYhNtS98B&sz=w400" alt="Ketua Dewan Ambalan 2"/></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="org-item">
+      <div class="org-header">
+        <div class="org-number">02</div>
+        <div class="org-header-info">
+          <h2>Wakil Ketua Dewan Kerja Ranting</h2>
+          <p>Kwartir Ranting · Pramuka</p>
+        </div>
+      </div>
+      <div class="org-body">
+        <p class="org-desc">Mendampingi Ketua dalam mengelola Dewan Kerja Ranting, berperan aktif dalam koordinasi kegiatan kepramukaan di tingkat kecamatan serta pembinaan Pramuka Penegak dan Pandega.</p>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://drive.google.com/thumbnail?id=19S7Nc5nNrt7jF8cretfkOS9HYZY3JAUv&sz=w400" alt="Wakil Ketua DKR"/></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="org-item">
+      <div class="org-header">
+        <div class="org-number">03</div>
+        <div class="org-header-info">
+          <h2>Anggota MTM</h2>
+          <p>Organisasi Eksternal</p>
+        </div>
+      </div>
+      <div class="org-body">
+        <p class="org-desc">Aktif sebagai anggota MTM, sebuah organisasi eksternal di luar lingkungan kampus. Berkontribusi dalam berbagai kegiatan organisasi dan mengembangkan jaringan serta pengalaman di luar jangkauan akademik.</p>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://drive.google.com/thumbnail?id=1ihucWXUdHXUyIkfJ2a681LlGWF3Zs_n5&sz=w400" alt="Anggota MTM"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

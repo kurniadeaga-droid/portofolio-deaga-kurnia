@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arsip Tugas TIK - Deaga</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --black:#0A0A0A; --dark:#1A1A1A; --card:#141414; --border:rgba(255,255,255,0.08); --mid:#555; --light:#AAA; --white:#F8F8F8; --pure:#FFF; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:var(--black); font-family:'Inter',sans-serif; color:var(--white); min-height:100vh; }
+    body::before { content:''; position:fixed; inset:0; background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px); background-size:60px 60px; pointer-events:none; }
+    .page-header { background:var(--dark); border-bottom:1px solid var(--border); padding:18px 40px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
+    .back-btn { color:var(--light); text-decoration:none; font-size:11px; letter-spacing:3px; text-transform:uppercase; transition:color 0.2s; }
+    .back-btn:hover { color:var(--pure); }
+    .header-title { font-family:'Cormorant Garamond',serif; color:var(--white); font-size:17px; font-weight:300; letter-spacing:2px; }
+    .container { max-width:800px; margin:0 auto; padding:50px 24px; }
+    .page-title { font-family:'Cormorant Garamond',serif; font-size:42px; font-weight:300; color:var(--pure); margin-bottom:6px; animation:fadeUp 0.7s ease forwards; }
+    .page-subtitle { font-size:11px; color:var(--mid); letter-spacing:4px; text-transform:uppercase; margin-bottom:48px; animation:fadeUp 0.7s ease forwards 0.1s; opacity:0; }
+
+    .info-box { border:1px solid var(--border); background:var(--card); padding:14px 18px; margin-bottom:28px; font-size:13px; color:var(--light); line-height:1.6; animation:fadeUp 0.7s ease forwards 0.15s; opacity:0; }
+
+    .folder-link { display:flex; align-items:center; gap:16px; background:var(--card); border:1px solid var(--border); padding:20px 24px; text-decoration:none; color:var(--white); transition:all 0.3s ease; animation:fadeUp 0.7s ease forwards 0.2s; opacity:0; }
+    .folder-link:hover { background:var(--dark); border-color:rgba(255,255,255,0.2); transform:translateX(4px); }
+    .folder-icon { font-size:28px; flex-shrink:0; filter:grayscale(100%); }
+    .folder-info { flex:1; }
+    .folder-info h3 { font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:400; color:var(--pure); margin-bottom:4px; }
+    .folder-info p { font-size:12px; color:var(--mid); letter-spacing:0.5px; }
+    .folder-arrow { font-size:18px; color:var(--mid); transition:all 0.3s; }
+    .folder-link:hover .folder-arrow { color:var(--white); transform:translateX(4px); }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+  </style>
+</head>
+<body>
+  <div class="page-header">
+    <a href="index.html" class="back-btn">← Kembali</a>
+    <span class="header-title">Arsip Tugas TIK</span>
+    <span></span>
+  </div>
+  <div class="container">
+    <h1 class="page-title">Arsip Tugas TIK</h1>
+    <p class="page-subtitle">Kumpulan tugas mata kuliah TIK</p>
+    <div class="info-box">📁 Semua file tugas tersimpan di Google Drive. Klik tombol di bawah untuk membuka folder dan mengakses file PDF.</div>
+    <a href="https://drive.google.com/drive/folders/1ltDjlWCXGk8zYHTC2Fs51gz8jXh34yxe" target="_blank" class="folder-link">
+      <span class="folder-icon">📂</span>
+      <div class="folder-info">
+        <h3>Folder Arsip Tugas TIK</h3>
+        <p>Klik untuk membuka di Google Drive</p>
+      </div>
+      <span class="folder-arrow">→</span>
+    </a>
+  </div>
+</body>
+</html>

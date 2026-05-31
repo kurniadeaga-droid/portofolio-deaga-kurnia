@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pengalaman - Deaga</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --black:#0A0A0A; --dark:#1A1A1A; --card:#141414; --border:rgba(255,255,255,0.08); --mid:#555; --light:#AAA; --white:#F8F8F8; --pure:#FFF; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:var(--black); font-family:'Inter',sans-serif; color:var(--white); min-height:100vh; }
+    body::before { content:''; position:fixed; inset:0; background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px); background-size:60px 60px; pointer-events:none; }
+    .page-header { background:var(--dark); border-bottom:1px solid var(--border); padding:18px 40px; display:flex; align-items:center; justify-content:space-between; position:sticky; top:0; z-index:100; }
+    .back-btn { color:var(--light); text-decoration:none; font-size:11px; letter-spacing:3px; text-transform:uppercase; transition:color 0.2s; }
+    .back-btn:hover { color:var(--pure); }
+    .header-title { font-family:'Cormorant Garamond',serif; color:var(--white); font-size:17px; font-weight:300; letter-spacing:2px; }
+    .container { max-width:860px; margin:0 auto; padding:50px 24px; }
+    .page-title { font-family:'Cormorant Garamond',serif; font-size:42px; font-weight:300; color:var(--pure); margin-bottom:6px; animation:fadeUp 0.7s ease forwards; }
+    .page-subtitle { font-size:11px; color:var(--mid); letter-spacing:4px; text-transform:uppercase; margin-bottom:48px; animation:fadeUp 0.7s ease forwards 0.1s; opacity:0; }
+
+    .exp-item { background:var(--card); border:1px solid var(--border); margin-bottom:24px; animation:fadeUp 0.7s ease forwards; opacity:0; }
+    .exp-item:nth-child(1){animation-delay:0.2s} .exp-item:nth-child(2){animation-delay:0.3s} .exp-item:nth-child(3){animation-delay:0.4s}
+    .exp-header { border-bottom:1px solid var(--border); padding:20px 28px; display:flex; align-items:center; gap:16px; }
+    .exp-icon { font-size:24px; filter:grayscale(100%); flex-shrink:0; }
+    .exp-header-info h2 { font-family:'Cormorant Garamond',serif; color:var(--pure); font-size:20px; font-weight:400; }
+    .exp-header-info p { color:var(--mid); font-size:11px; letter-spacing:2px; text-transform:uppercase; margin-top:3px; }
+    .exp-body { padding:24px 28px; }
+    .exp-desc { font-size:14px; color:var(--light); line-height:1.7; margin-bottom:20px; font-weight:300; }
+    .photo-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:8px; }
+    .photo-item { aspect-ratio:4/3; background:var(--dark); overflow:hidden; }
+    .photo-item img { width:100%; height:100%; object-fit:cover; filter:grayscale(100%); transition:filter 0.3s,transform 0.3s; }
+    .photo-item:hover img { filter:grayscale(0%); transform:scale(1.04); }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+  </style>
+</head>
+<body>
+  <div class="page-header">
+    <a href="profil.html" class="back-btn">← Kembali</a>
+    <span class="header-title">Pengalaman</span>
+    <span></span>
+  </div>
+  <div class="container">
+    <h1 class="page-title">Pengalaman</h1>
+    <p class="page-subtitle">Kenangan & momen berharga masa SMA</p>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-icon">🏀</span>
+        <div class="exp-header-info">
+          <h2>Basket</h2>
+          <p>Olahraga · SMA</p>
+        </div>
+      </div>
+      <div class="exp-body">
+        <p class="exp-desc">Aktif berpartisipasi dalam kegiatan olahraga basket di masa SMA, mengasah kemampuan kerja tim, kedisiplinan, dan sportivitas melalui latihan dan pertandingan bersama rekan-rekan.</p>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://drive.google.com/thumbnail?id=1-RvxIf0vWqjysWJKtBPL2RdL2sVDVqo3&sz=w400" alt="Basket 1"/></div>
+          <div class="photo-item"><img src="https://drive.google.com/thumbnail?id=13hCUiUd9iYFfUOhUGHy2WPxjSZUt3J8L&sz=w400" alt="Basket 2"/></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-icon">👘</span>
+        <div class="exp-header-info">
+          <h2>Duta Batik</h2>
+          <p>Seni & Budaya · SMA</p>
+        </div>
+      </div>
+      <div class="exp-body">
+        <p class="exp-desc">Terpilih sebagai Duta Batik, menjadi representasi dalam mempromosikan dan melestarikan budaya batik sebagai warisan bangsa Indonesia. Pengalaman ini melatih kepercayaan diri dan kecintaan terhadap budaya lokal.</p>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://drive.google.com/thumbnail?id=1aLmngl6seFl3x_jUxbnMcQrCwk18SCB0&sz=w400" alt="Duta Batik 1"/></div>
+          <div class="photo-item"><img src="https://drive.google.com/thumbnail?id=1eMDWXDrzWyOgVJ7rVA72Y3Suj3nR70jQ&sz=w400" alt="Duta Batik 2"/></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <span class="exp-icon">⚜️</span>
+        <div class="exp-header-info">
+          <h2>Pramuka</h2>
+          <p>Kepramukaan · SMA</p>
+        </div>
+      </div>
+      <div class="exp-body">
+        <p class="exp-desc">Aktif dalam kegiatan Pramuka sejak jenjang SMA, membentuk karakter tangguh, disiplin, dan jiwa kepemimpinan melalui berbagai kegiatan alam, pengabdian masyarakat, dan pelatihan kepramukaan.</p>
+        <div class="photo-grid">
+          <div class="photo-item"><img src="https://drive.google.com/thumbnail?id=19xZqs6pcgfYmLCX_b0lgNumRpgmoMZGa&sz=w400" alt="Pramuka"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
